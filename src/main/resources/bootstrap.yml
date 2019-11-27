@@ -11,7 +11,7 @@ spring:
         git:
           timeout: 50
           clone-on-start: true
-          basedir: /var/msi-config/fallback
+          
 
 eureka:
   client:
