@@ -11,7 +11,9 @@ spring:
         git:
           timeout: 50
           clone-on-start: true
-          
+          uri: ${vcap.services.global-config-service-ref.credentials.uri}
+          username: ${vcap.services.global-config-service-ref.credentials.username}
+          password: ${vcap.services.global-config-service-ref.credentials.password}
 
 eureka:
   client:
