@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: msi-config
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          timeout: 50
+          clone-on-start: true
+          basedir: /var/msi-config/fallback
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${vcap.services.eureka-service.credentials.url}
