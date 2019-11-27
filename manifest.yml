@@ -14,4 +14,4 @@ applications:
     
   services:
     - eureka-service
-    - global-config-server-ref
+    - global-config-service-ref
